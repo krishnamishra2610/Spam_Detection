@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection </title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav>Krishna Mishra</nav>
+    <div class="container">
+        <div class="box1">
+            <form action="{{url_for('predict')}}" method='post' name='form_1'>
+                <h3 class="form_title">Spam Detection</h3>
+
+                
+                <label for="">Paste your message here</label>
+                
+                <textarea name="new_text" class="form_input" cols="30" rows="10"></textarea>
+                
+                
+               
+                <button type="submit" class='form_button'> Check </button>
+            </form>
+            
+        </div>
+        <div id="output" >
+            <br>
+           <h1 style="color:tomato; font-weight: bold; background-color: white;"> {{pred}}  </h1>     
+           <h1 style="color: lightgreen;font-weight: bold; background-color: white;"> {{pred1}}  </h1>  
+        </div>
+        
+        
+        
+    </div>
+    
+</body>
+</html>
