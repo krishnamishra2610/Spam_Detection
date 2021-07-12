@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <nav>Krishna Mishra</nav>
+    <nav style="color: whitesmoke;">Krishna Mishra</nav>
     <div class="container">
         <div class="box1">
             <form action="{{url_for('predict')}}" method='post' name='form_1'>
@@ -27,8 +27,8 @@
         </div>
         <div id="output" >
             <br>
-           <h1 style="color:tomato; font-weight: bold; background-color: white;"> {{pred}}  </h1>     
-           <h1 style="color: lightgreen;font-weight: bold; background-color: white;"> {{pred1}}  </h1>  
+           <h1 style="color:tomato; font-weight: bold; "> {{pred}}  </h1>     
+           <h1 style="color: lightgreen;font-weight: bold;"> {{pred1}}  </h1>  
         </div>
         
         
